@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Начална Страница</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 font-sans">
+
+    <div class="bg-pink-100 text-center text-sm py-2 text-gray-700">
+        БЕЗПЛАТНА ДОСТАВКА ДО 2 РАБОТНИ ДНИ
+    </div>
+
+    <nav class="flex items-center justify-between px-6 py-4 bg-white shadow-md">
+        <div class="text-xl font-bold text-gray-800">
+            <img src="logo.png" alt="Logo" class="h-8">
+        </div>
+        <div class="hidden md:flex space-x-6 text-gray-700">
+            <a href="#" class="hover:text-gray-900">НАЧАЛО</a>
+            <a href="#" class="hover:text-gray-900">ПРОДУКТИ</a>
+            <a href="#" class="hover:text-gray-900">CLUB</a>
+            <a href="#" class="hover:text-gray-900">ЗА НАС</a>
+            <a href="#" class="hover:text-gray-900">КОНТАКТИ</a>
+        </div>
+
+        <div class="flex space-x-4 items-center text-gray-700">
+            <button class="hover:text-gray-900"><i class="fas fa-bars"></i></button> 
+            <button class="hover:text-gray-900"><i class="fas fa-search"></i></button> 
+            <button class="hover:text-gray-900"><i class="fas fa-shopping-cart"></i></button> 
+        </div>
+    </nav>
+
+    <section class="relative bg-gray-100 py-16 flex items-center justify-center" style="background-image: url('header-image.jpg'); background-size: cover;">
+        <div class="text-center bg-white bg-opacity-75 p-8 rounded-lg shadow-lg max-w-md">
+            <p class="text-pink-500 font-bold text-lg">New!</p>
+            <h1 class="text-2xl font-semibold text-gray-800">AURA: ПЪРВИЯТ БЛЕСТЯЩ СПРЕЙ С ПЕПТИДИ</h1>
+            <button class="mt-6 bg-pink-600 text-white px-6 py-2 rounded-full hover:bg-pink-700">Купи сега</button>
+        </div>
+    </section>
+	<section class="py-12 bg-gray-50 text-center">
+    <h2 class="text-3xl font-semibold text-gray-800">КОСА</h2>
+    <p class="text-gray-600">Натурални продукти за силна, гъста и блестяща коса</p>
+    <div class="flex justify-center mt-8 space-x-8">
+
+        <div class="bg-white p-6 rounded-lg shadow-lg w-64">
+            <img src="product1.jpg" alt="Product 1" class="w-full h-48 object-cover rounded-md">
+            <h3 class="text-sm text-gray-600 mt-4">Продукт 1</h3>
+            <h4 class="text-lg font-semibold mt-2">Описание на продукта</h4>
+            <p class="text-sm text-gray-500 mt-1">Описание на продукта</p>
+            <p class="text-pink-600 font-bold text-lg mt-4">Цена</p>
+            <button class="mt-4 bg-pink-600 text-white px-4 py-2 rounded-full text-sm hover:bg-pink-700">Купи сега</button>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-lg w-64">
+            <img src="product2.jpg" alt="Product 2" class="w-full h-48 object-cover rounded-md">
+            <h3 class="text-sm text-gray-600 mt-4">Продукт 2</h3>
+            <h4 class="text-lg font-semibold mt-2">Описание на продукта</h4>
+            <p class="text-sm text-gray-500 mt-1">Описание на продукта</p>
+            <p class="text-pink-600 font-bold text-lg mt-4">Цена</p>
+            <button class="mt-4 bg-pink-600 text-white px-4 py-2 rounded-full text-sm hover:bg-pink-700">Купи сега</button>
+        </div>
+    </div>
+</section>
+
+<div class="bg-pink-50 h-2 my-8"></div>
+
+<section class="py-12 bg-gray-50 text-center">
+    <h2 class="text-3xl font-semibold text-gray-800">КОЖА</h2>
+    <p class="text-gray-600 mt-2">Серията SKIN за перфектна кожа, без несъвършенства.</p>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+
+        <div class="bg-white p-6 rounded-lg shadow-lg w-64 mx-auto">
+            <img src="product1.jpg" alt="Product 1" class="w-full h-48 object-cover rounded-md">
+            <h3 class="text-sm text-gray-600 mt-4">SKIN</h3>
+            <h4 class="text-lg font-semibold mt-2">Anti-cellulite Dry Oil</h4>
+            <p class="text-sm text-gray-500 mt-1">2 169 мнения</p>
+            <p class="text-gray-600 mt-2 text-sm">Анти-целулитно сухо масло. Ремоделира и оформя силуета.</p>
+            <p class="text-pink-600 font-bold text-lg mt-4">45,00 лв. / 110ml</p>
+            <p class="text-pink-600 font-bold text-lg mt-2">63,00 лв. / 200ml</p>
+            <div class="flex space-x-2 mt-4">
+                <button class="bg-pink-600 text-white px-4 py-2 rounded-full text-sm hover:bg-pink-700">ДОБАВИ</button>
+                <button class="bg-pink-600 text-white px-4 py-2 rounded-full text-sm hover:bg-pink-700">ДОБАВИ</button>
+            </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-lg w-64 mx-auto">
+            <img src="product2.jpg" alt="Product 2" class="w-full h-48 object-cover rounded-md">
+            <h3 class="text-sm text-gray-600 mt-4">SKIN</h3>
+            <h4 class="text-lg font-semibold mt-2">Collagen Booster Dry Oil</h4>
+            <p class="text-sm text-gray-500 mt-1">580 мнения</p>
+            <p class="text-gray-600 mt-2 text-sm">Био сухо масло с натурално антиейдж действие. С масла от супер плодове.</p>
+            <p class="text-pink-600 font-bold text-lg mt-4">45,00 лв.</p>
+            <button class="mt-4 bg-pink-600 text-white px-4 py-2 rounded-full text-sm hover:bg-pink-700">ДОБАВИ</button>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-lg w-64 mx-auto">
+            <img src="product3.jpg" alt="Product 3" class="w-full h-48 object-cover rounded-md">
+            <h3 class="text-sm text-gray-600 mt-4">SKIN</h3>
+            <h4 class="text-lg font-semibold mt-2">Stretch Mark Dry Oil</h4>
+            <p class="text-sm text-gray-500 mt-1">308 мнения</p>
+            <p class="text-gray-600 mt-2 text-sm">Био сухо масло против стрии. Подходящо и при дехидратирана и старееща кожа.</p>
+            <p class="text-pink-600 font-bold text-lg mt-4">48,00 лв.</p>
+            <button class="mt-4 bg-pink-600 text-white px-4 py-2 rounded-full text-sm hover:bg-pink-700">ДОБАВИ</button>
+        </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+        <div class="bg-white p-6 rounded-lg shadow-lg w-64 mx-auto">
+            <img src="product4.jpg" alt="Product 4" class="w-full h-48 object-cover rounded-md">
+            <h3 class="text-sm text-gray-600 mt-4">SCRUB</h3>
+            <h4 class="text-lg font-semibold mt-2">Luxury Coffee Scrub Box</h4>
+            <p class="text-sm text-gray-500 mt-1">692 мнения</p>
+            <p class="text-gray-600 mt-2 text-sm">Луксозна кутия с 4 натурални био скраба – 3 за тяло и 1 за лице.</p>
+            <p class="text-pink-600 font-bold text-lg mt-4">48,00 лв.</p>
+            <button class="mt-4 bg-pink-600 text-white px-4 py-2 rounded-full text-sm hover:bg-pink-700">ДОБАВИ</button>
+        </div>
+    </div>
+</section>
+
+<section class="py-12 bg-gray-50 text-center">
+    <h2 class="text-3xl font-semibold text-gray-800">ЛИЦЕ</h2>
+    <p class="text-gray-600 mt-2">Високоефективни натурални продукти за подмладена и сияйна кожа.</p>
+    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8 mt-8">
+
+        <div class="bg-white p-6 rounded-lg shadow-lg w-64 mx-auto">
+            <img src="product1.jpg" alt="AQUA Filler-Effect Hyaluron Supreme" class="w-full h-48 object-cover rounded-md">
+            <h3 class="text-sm text-gray-600 mt-4">AQUA</h3>
+            <h4 class="text-lg font-semibold mt-2">Filler-Effect Hyaluron Supreme</h4>
+            <p class="text-sm text-gray-500 mt-1">76 мнения</p>
+            <p class="text-gray-600 mt-2 text-sm">Серум за лице за ултра хидратация с 8 вида хиалуронова киселина</p>
+            <p class="text-pink-600 font-bold text-lg mt-4">78,00 лв.</p>
+            <button class="mt-4 bg-pink-600 text-white px-4 py-2 rounded-full text-sm hover:bg-pink-700">ДОБАВИ</button>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-lg w-64 mx-auto">
+            <img src="product2.jpg" alt="Product 2" class="w-full h-48 object-cover rounded-md">
+            <h3 class="text-sm text-gray-600 mt-4">LIFTING</h3>
+            <h4 class="text-lg font-semibold mt-2">Lifting Super Serum</h4>
+            <p class="text-sm text-gray-500 mt-1">153 мнения</p>
+            <p class="text-gray-600 mt-2 text-sm">Супер серум за лифтинг ефект на кожата с микро-колаген и био хиалуронова киселина.</p>
+            <p class="text-pink-600 font-bold text-lg mt-4">58,00 лв.</p>
+            <button class="mt-4 bg-pink-600 text-white px-4 py-2 rounded-full text-sm hover:bg-pink-700">ДОБАВИ</button>
+        </div>
+    </div>
+</section>
+
+        <div class="flex bg-white p-6 rounded-lg shadow-lg w-full">
+            <div class="bg-gray-300 rounded-lg shadow-lg overflow-hidden w-full h-80">
+            <img src="image-placeholder.jpg" alt="Снимка на продукт" class="w-full h-full object-cover">
+
+			</div>
+        </div>
+        </div>
+	</section>
+	
+	<section class="py-12 bg-yellow-50 text-center">
+    <h2 class="text-3xl font-semibold text-gray-800">АВТОБРОНЗАНТИ</h2>
+    <p class="text-gray-600 mb-8">За перфектен тен, без да е необходимо слънце. Постигнете естествено изглеждащ, равномерен, наситен, бронзов тен.</p>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+        <div class="bg-white p-6 rounded-lg shadow-lg w-64 mx-auto">
+            <img src="product1.jpg" alt="Self-tanning Face Serum" class="w-full h-48 object-cover rounded-md">
+            <h3 class="text-sm text-gray-600 mt-4">NEW - SOLIS</h3>
+            <h4 class="text-lg font-semibold mt-2">Self-tanning Face Serum</h4>
+            <p class="text-sm text-gray-500 mt-1">45 мнения</p>
+            <p class="text-gray-600 mt-2 text-sm">Автобронзиращ серум за лице с хиалуронова киселина. За красив бронзов тен и подмладена кожа.</p>
+            <p class="text-pink-600 font-bold text-lg mt-4">56,00 лв.</p>
+            <button class="mt-4 bg-pink-600 text-white px-4 py-2 rounded-full text-sm hover:bg-pink-700">ДОБАВИ</button>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-lg w-64 mx-auto">
+            <img src="product2.jpg" alt="Medium Self-tanning Foam" class="w-full h-48 object-cover rounded-md">
+            <h3 class="text-sm text-gray-600 mt-4">SOLIS</h3>
+            <h4 class="text-lg font-semibold mt-2">Medium Self-tanning Foam</h4>
+            <p class="text-sm text-gray-500 mt-1">1 197 мнения</p>
+            <p class="text-gray-600 mt-2 text-sm">Натурална автобронзираща пяна. За наситен и дълготраен бронзов тен. Нюанс: Средно наситен</p>
+            <p class="text-pink-600 font-bold text-lg mt-4">56,00 лв.</p>
+            <button class="mt-4 bg-pink-600 text-white px-4 py-2 rounded-full text-sm hover:bg-pink-700">ДОБАВИ</button>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-lg w-64 mx-auto">
+            <img src="product3.jpg" alt="Dark Self-tanning Foam" class="w-full h-48 object-cover rounded-md">
+            <h3 class="text-sm text-gray-600 mt-4">SOLIS</h3>
+            <h4 class="text-lg font-semibold mt-2">Dark Self-tanning Foam</h4>
+            <p class="text-sm text-gray-500 mt-1">1 197 мнения</p>
+            <p class="text-gray-600 mt-2 text-sm">Натурална автобронзираща пяна. За наситен и дълготраен бронзов тен. Нюанс: Тъмен</p>
+            <p class="text-pink-600 font-bold text-lg mt-4">56,00 лв.</p>
+            <button class="mt-4 bg-pink-600 text-white px-4 py-2 rounded-full text-sm hover:bg-pink-700">ДОБАВИ</button>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-lg w-64 mx-auto">
+            <img src="product4.jpg" alt="Instant Weekend Tan" class="w-full h-48 object-cover rounded-md">
+            <h3 class="text-sm text-gray-600 mt-4">SOLIS</h3>
+            <h4 class="text-lg font-semibold mt-2">Instant Weekend Tan</h4>
+            <p class="text-sm text-gray-500 mt-1">103 мнения</p>
+            <p class="text-gray-600 mt-2 text-sm">Натурална бронзираща пяна с моментален ефект. Постигате безупречен тен за секунди и отмивате, когато поискате.</p>
+            <p class="text-pink-600 font-bold text-lg mt-4">56,00 лв.</p>
+            <button class="mt-4 bg-pink-600 text-white px-4 py-2 rounded-full text-sm hover:bg-pink-700">ДОБАВИ</button>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-lg w-64 mx-auto">
+            <img src="product5.jpg" alt="SELF-TANNING MITT" class="w-full h-48 object-cover rounded-md">
+            <h3 class="text-sm text-gray-600 mt-4">SELF-TANNING MITT</h3>
+            <h4 class="text-lg font-semibold mt-2">For ultimate results</h4>
+            <p class="text-sm text-gray-500 mt-1">886 мнения</p>
+            <p class="text-gray-600 mt-2 text-sm">За бързо, лесно и безупречно нанасяне на автобронзант.</p>
+            <p class="text-pink-600 font-bold text-lg mt-4">22,00 лв.</p>
+            <button class="mt-4 bg-pink-600 text-white px-4 py-2 rounded-full text-sm hover:bg-pink-700">ДОБАВИ</button>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-lg w-64 mx-auto">
+            <img src="product6.jpg" alt="BACK APPLICATOR" class="w-full h-48 object-cover rounded-md">
+            <h3 class="text-sm text-gray-600 mt-4">BACK APPLICATOR</h3>
+            <h4 class="text-lg font-semibold mt-2">For self-tanning foam</h4>
+            <p class="text-sm text-gray-500 mt-1">3 мнения</p>
+            <p class="text-gray-600 mt-2 text-sm">За лесно и равномерно нанасяне на автобронзант на гърба.</p>
+            <p class="text-pink-600 font-bold text-lg mt-4">28,00 лв.</p>
+            <button class="mt-4 bg-pink-600 text-white px-4 py-2 rounded-full text-sm hover:bg-pink-700">ДОБАВИ</button>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-lg w-64 mx-auto">
+            <img src="product7.jpg" alt="EXFOLIATING MITT" class="w-full h-48 object-cover rounded-md">
+            <h3 class="text-sm text-gray-600 mt-4">EXFOLIATING MITT</h3>
+            <h4 class="text-lg font-semibold mt-2">100% high quality silk</h4>
+            <p class="text-sm text-gray-500 mt-1">88 мнения</p>
+            <p class="text-gray-600 mt-2 text-sm">Копринена дълбоко ексфолираща ръкавица. Подходяща и за подготовка и премахване на автобронзант.</p>
+            <p class="text-pink-600 font-bold text-lg mt-4">43,00 лв.</p>
+            <button class="mt-4 bg-pink-600 text-white px-4 py-2 rounded-full text-sm hover:bg-pink-700">ДОБАВИ</button>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-lg w-64 mx-auto">
+            <img src="product8.jpg" alt="TANNING BRUSH" class="w-full h-48 object-cover rounded-md">
+            <h3 class="text-sm text-gray-600 mt-4">TANNING BRUSH</h3>
+            <h4 class="text-lg font-semibold mt-2">Premium tool for face</h4>
+            <p class="text-sm text-gray-500 mt-1">87 мнения</p>
+            <p class="text-gray-600 mt-2 text-sm">За прецизно и безупречно нанасяне на автобронзанти и други продукти.</p>
+            <p class="text-pink-600 font-bold text-lg mt-4">48,00 лв.</p>
+            <button class="mt-4 bg-pink-600 text-white px-4 py-2 rounded-full text-sm hover:bg-pink-700">ДОБАВИ</button>
+        </div>
+
+    </div>
+</section>
+	
+	<section class="py-12 bg-yellow-100 text-center">
+    <h2 class="text-3xl font-semibold text-gray-800">ТЕН</h2>
+    <p class="text-gray-600 mb-8">Натурални, био масла за супер тен и сияйна кожа.</p>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+        <div class="bg-white p-6 rounded-lg shadow-lg w-64 mx-auto">
+            <img src="product1.jpg" alt="Watermelon Suntan & Body Oil" class="w-full h-48 object-cover rounded-md">
+            <h3 class="text-sm text-gray-600 mt-4">WATERMELON</h3>
+            <h4 class="text-lg font-semibold mt-2">Suntan & Body Oil</h4>
+            <p class="text-sm text-gray-500 mt-1">229 мнения</p>
+            <p class="text-gray-600 mt-2 text-sm">За бърз, наситен тен и сияйна кожа. С аромат на сочна диня.</p>
+            <p class="text-pink-600 font-bold text-lg mt-4">45,00 лв.</p>
+            <button class="mt-4 bg-pink-600 text-white px-4 py-2 rounded-full text-sm hover:bg-pink-700">ДОБАВИ</button>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-lg w-64 mx-auto">
+            <img src="product2.jpg" alt="Choco Suntan & Body Oil" class="w-full h-48 object-cover rounded-md">
+            <h3 class="text-sm text-gray-600 mt-4">CHOCO</h3>
+            <h4 class="text-lg font-semibold mt-2">Suntan & Body Oil</h4>
+            <p class="text-sm text-gray-500 mt-1">3 504 мнения</p>
+            <p class="text-gray-600 mt-2 text-sm">Био масло за бърз и наситен тен. Подходящо и за ежедневна употреба. С аромат на шоколад.</p>
+            <div class="flex justify-center mt-4 space-x-2">
+                <button class="bg-pink-600 text-white px-4 py-2 rounded-full text-sm hover:bg-pink-700">45,00 лв. / 110ml</button>
+                <button class="bg-pink-600 text-white px-4 py-2 rounded-full text-sm hover:bg-pink-700">63,00 лв. / 200ml</button>
+            </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-lg w-64 mx-auto">
+            <img src="product3.jpg" alt="Cool After Sun Oil" class="w-full h-48 object-cover rounded-md">
+            <h3 class="text-sm text-gray-600 mt-4">COOL</h3>
+            <h4 class="text-lg font-semibold mt-2">After Sun Oil</h4>
+            <p class="text-sm text-gray-500 mt-1">530 мнения</p>
+            <p class="text-gray-600 mt-2 text-sm">Био масло за нежна хидратация и възстановяване след слънце.</p>
+            <div class="flex justify-center mt-4 space-x-2">
+                <button class="bg-pink-600 text-white px-4 py-2 rounded-full text-sm hover:bg-pink-700">45,00 лв. / 110ml</button>
+                <button class="bg-pink-600 text-white px-4 py-2 rounded-full text-sm hover:bg-pink-700">63,00 лв. / 200ml</button>
+            </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-lg w-64 mx-auto">
+            <img src="product4.jpg" alt="UOMO Suntan & Body Oil" class="w-full h-48 object-cover rounded-md">
+            <h3 class="text-sm text-gray-600 mt-4">UOMO</h3>
+            <h4 class="text-lg font-semibold mt-2">Suntan & Body Oil</h4>
+            <p class="text-sm text-gray-500 mt-1">289 мнения</p>
+            <p class="text-gray-600 mt-2 text-sm">Био масло за мъже. За бърз, наситен тен, хидратирана и подхранена кожа. Аромат BLACK COCONUT.</p>
+            <div class="flex justify-center mt-4 space-x-2">
+                <button class="bg-pink-600 text-white px-4 py-2 rounded-full text-sm hover:bg-pink-700">43,00 лв. / 110ml</button>
+                <button class="bg-pink-600 text-white px-4 py-2 rounded-full text-sm hover:bg-pink-700">63,00 лв. / 200ml</button>
+            </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-lg w-64 mx-auto">
+            <img src="product5.jpg" alt="Monoi Suntan & Body Oil" class="w-full h-48 object-cover rounded-md">
+            <h3 class="text-sm text-gray-600 mt-4">MONOI</h3>
+            <h4 class="text-lg font-semibold mt-2">Suntan & Body Oil</h4>
+            <p class="text-sm text-gray-500 mt-1">1 007 мнения</p>
+            <p class="text-gray-600 mt-2 text-sm">Био масло за бърз тен, хидратирана и сияйна кожа с ухание на гардения.</p>
+            <div class="flex justify-center mt-4 space-x-2">
+                <button class="bg-pink-600 text-white px-4 py-2 rounded-full text-sm hover:bg-pink-700">48,00 лв. / 110ml</button>
+                <button class="bg-pink-600 text-white px-4 py-2 rounded-full text-sm hover:bg-pink-700">65,00 лв. / 200ml</button>
+            </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-lg w-64 mx-auto">
+            <img src="product6.jpg" alt="Aloha Suntan & Body Oil" class="w-full h-48 object-cover rounded-md">
+            <h3 class="text-sm text-gray-600 mt-4">ALOHA</h3>
+            <h4 class="text-lg font-semibold mt-2">Suntan & Body Oil</h4>
+            <p class="text-sm text-gray-500 mt-1">1 786 мнения</p>
+            <p class="text-gray-600 mt-2 text-sm">Био масло за бърз тен с кокосов аромат, подходящо за ежедневна употреба.</p>
+            <div class="flex justify-center mt-4 space-x-2">
+                <button class="bg-pink-600 text-white px-4 py-2 rounded-full text-sm hover:bg-pink-700">45,00 лв. / 110ml</button>
+                <button class="bg-pink-600 text-white px-4 py-2 rounded-full text-sm hover:bg-pink-700">63,00 лв. / 200ml</button>
+            </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-lg w-64 mx-auto">
+            <img src="product7.jpg" alt="Mango Suntan & Body Oil" class="w-full h-48 object-cover rounded-md">
+            <h3 class="text-sm text-gray-600 mt-4">MANGO</h3>
+            <h4 class="text-lg font-semibold mt-2">Suntan & Body Oil</h4>
+            <p class="text-sm text-gray-500 mt-1">505 мнения</p>
+            <p class="text-gray-600 mt-2 text-sm">Био масло за тен с аромат на тропическо манго.</p>
+            <div class="flex justify-center mt-4 space-x-2">
+                <button class="bg-pink-600 text-white px-4 py-2 rounded-full text-sm hover:bg-pink-700">45,00 лв. / 110ml</button>
+                <button class="bg-pink-600 text-white px-4 py-2 rounded-full text-sm hover:bg-pink-700">63,00 лв. / 200ml</button>
+            </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-lg w-64 mx-auto">
+            <img src="product8.jpg" alt="Ananas Suntan & Body Oil" class="w-full h-48 object-cover rounded-md">
+            <h3 class="text-sm text-gray-600 mt-4">ANANAS</h3>
+            <h4 class="text-lg font-semibold mt-2">Suntan & Body Oil</h4>
+            <p class="text-sm text-gray-500 mt-1">305 мнения</p>
+            <p class="text-gray-600 mt-2 text-sm">Био масло с аромат на сочен ананас и ванилия.</p>
+            <div class="flex justify-center mt-4 space-x-2">
+                <button class="bg-pink-600 text-white px-4 py-2 rounded-full text-sm hover:bg-pink-700">45,00 лв. / 110ml</button>
+                <button class="bg-pink-600 text-white px-4 py-2 rounded-full text-sm hover:bg-pink-700">63,00 лв. / 200ml</button>
+            </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-lg w-64 mx-auto">
+            <img src="product9.jpg" alt="Citro Suntan & Body Oil" class="w-full h-48 object-cover rounded-md">
+            <h3 class="text-sm text-gray-600 mt-4">CITRO</h3>
+            <h4 class="text-lg font-semibold mt-2">Suntan & Body Oil</h4>
+            <p class="text-gray-600 mt-2 text-sm">Био масло за тен с освежаващ цитрусов аромат.</p>
+            <p class="text-pink-600 font-bold text-lg mt-4">45,00 лв.</p>
+            <button class="mt-4 bg-pink-600 text-white px-4 py-2 rounded-full text-sm hover:bg-pink-700">ДОБАВИ</button>
+        </div>
+
+    </div>
+</section>
+
+	<section class="py-12 bg-purple-100 text-center">
+    <h2 class="text-3xl font-semibold text-gray-800">БЛЯСЪК</h2>
+    <p class="text-gray-600 mb-8">Натурални продукти за елегантен блясък и грижа за кожата.</p>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+        <div class="bg-white p-6 rounded-lg shadow-lg w-64 mx-auto">
+            <img src="product1.jpg" alt="Aura Peptide Shimmer Spray" class="w-full h-48 object-cover rounded-md">
+            <h3 class="text-sm text-gray-600 mt-4">AURA</h3>
+            <h4 class="text-lg font-semibold mt-2">Peptide Shimmer Spray</h4>
+            <p class="text-sm text-gray-500 mt-1">54 мнения</p>
+            <p class="text-gray-600 mt-2 text-sm">Натурален блестящ спрей с пептиди за лице, тяло и коса. Озарява, хидратира и подмладява.</p>
+            <p class="text-pink-600 font-bold text-lg mt-4">52,00 лв.</p>
+            <button class="mt-4 bg-pink-600 text-white px-4 py-2 rounded-full text-sm hover:bg-pink-700">ДОБАВИ</button>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-lg w-64 mx-auto">
+            <img src="product2.jpg" alt="Glow Shimmer Oil" class="w-full h-48 object-cover rounded-md">
+            <h3 class="text-sm text-gray-600 mt-4">GLOW</h3>
+            <h4 class="text-lg font-semibold mt-2">Shimmer Oil</h4>
+            <p class="text-sm text-gray-500 mt-1">908 мнения</p>
+            <p class="text-gray-600 mt-2 text-sm">Натурално озаряващо и хидратиращо сухо масло с блестящи частици.</p>
+            <p class="text-pink-600 font-bold text-lg mt-4">52,00 лв.</p>
+            <button class="mt-4 bg-pink-600 text-white px-4 py-2 rounded-full text-sm hover:bg-pink-700">ДОБАВИ</button>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-lg w-64 mx-auto">
+            <img src="product3.jpg" alt="Nougat Sparkling Body Butter" class="w-full h-48 object-cover rounded-md">
+            <h3 class="text-sm text-gray-600 mt-4">NOUGAT</h3>
+            <h4 class="text-lg font-semibold mt-2">Sparkling Body Butter</h4>
+            <p class="text-sm text-gray-500 mt-1">152 мнения</p>
+            <p class="text-gray-600 mt-2 text-sm">Премиум грижа за кожата. Топящ се био мус. Изравнява тена и кара кожата да заблести. С аромат на гурме десерт.</p>
+            <p class="text-pink-600 font-bold text-lg mt-4">95,00 лв.</p>
+            <button class="mt-4 bg-pink-600 text-white px-4 py-2 rounded-full text-sm hover:bg-pink-700">ДОБАВИ</button>
+        </div>
+
+    </div>
+</section>
+
+	<section class="py-12 bg-yellow-100 text-center">
+    <h2 class="text-3xl font-semibold text-gray-800">SPF</h2>
+    <p class="text-gray-600 mb-8">Натурални, био слънцезащитни лосиони.</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+        <div class="bg-white p-6 rounded-lg shadow-lg w-64 mx-auto">
+            <img src="product1.jpg" alt="Invisible Zinc SPF30" class="w-full h-48 object-cover rounded-md">
+            <h3 class="text-sm text-gray-600 mt-4">invisible zinc</h3>
+            <h4 class="text-lg font-semibold mt-2">SPF30 Natural Sunscreen Lotion</h4>
+            <p class="text-sm text-gray-500 mt-1">368 мнения</p>
+            <p class="text-gray-600 mt-2 text-sm">Натурален слънцезащитен лосион. Предпазва от UVA & UVB лъчи.</p>
+            <p class="text-pink-600 font-bold text-lg mt-4">45,00 лв.</p>
+            <button class="mt-4 bg-pink-600 text-white px-4 py-2 rounded-full text-sm hover:bg-pink-700">ДОБАВИ</button>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-lg w-64 mx-auto">
+            <img src="product2.jpg" alt="Invisible Zinc SPF50" class="w-full h-48 object-cover rounded-md">
+            <h3 class="text-sm text-gray-600 mt-4">invisible zinc</h3>
+            <h4 class="text-lg font-semibold mt-2">SPF50 Natural Sunscreen Lotion</h4>
+            <p class="text-sm text-gray-500 mt-1">355 мнения</p>
+            <p class="text-gray-600 mt-2 text-sm">Натурален слънцезащитен лосион. Предпазва от UVA & UVB лъчи. Със скъпоценно малиново масло.</p>
+            <p class="text-pink-600 font-bold text-lg mt-4">45,00 лв.</p>
+            <button class="mt-4 bg-pink-600 text-white px-4 py-2 rounded-full text-sm hover:bg-pink-700">ДОБАВИ</button>
+        </div>
+
+    </div>
+</section>
+
+<section class="py-12">
+    <div class="container mx-auto">
+        <div class="flex items-center justify-between">
+            <div class="bg-orange-500 text-black p-8 w-1/2">
+                <h2 class="text-3xl font-semibold mb-4">Натурални и Био Продукти на COCOSOLIS</h2>
+                <p class="text-lg mb-4">Продуктите на COCOSОLIS са винаги натурални и създадени само с най-висококачествени био, студено пресовани масла.</p>
+                <p class="text-lg mb-4">Създадени с любов и уважение към хората и природата. Нежни към кожата. Притежаващи аромат, в който ще се влюбите.</p>
+                <p class="text-lg">Без наличие на парабени, оцветители, минерални и синтетични масла и разбира се, без тестване върху животни.</p>
+            </div>
+
+            <div class="w-1/2">
+                <img src="your-image.jpg" alt="COCOSOLIS Products" class="w-full h-full object-cover rounded-lg">
+            </div>
+        </div>
+    </div>
+</section>
+
+	<section class="py-12 bg-gray-100">
+    <div class="container mx-auto">
+        <h2 class="text-3xl font-semibold text-center mb-8">Потребителски отзиви</h2>
+        
+        <div class="bg-white p-6 rounded-lg shadow-md mb-6 flex">
+            <div class="w-3/4 pr-4">
+                <p class="font-semibold text-lg">Даниела Д.</p>
+                <p class="text-sm text-gray-500">потвърдена поръчка - 08.07.2024</p>
+                <p class="mt-2">Копринено нежни масла за кожата. Ароматите са превъзходни.</p>
+                <p class="font-semibold text-sm mt-2">Мнението е за продукт: WATERMELON Suntan & Body Oil</p>
+                <div class="flex justify-between text-sm text-gray-500 mt-2">
+                    <span>Това мнение беше ли полезно за Вас?</span>
+                    <span>0 / 0</span>
+                </div>
+            </div>
+            <div class="w-1/4">
+                <img src="user1.jpg" alt="Даниела Д." class="w-full h-auto rounded-lg">
+            </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-md mb-6 flex">
+            <div class="w-3/4 pr-4">
+                <p class="font-semibold text-lg">Калина В.</p>
+                <p class="text-sm text-gray-500">потвърдена поръчка - 23.06.2024</p>
+                <p class="mt-2">Уникално масло! Уникален аромат!</p>
+                <p class="font-semibold text-sm mt-2">Мнението е за продукт: WATERMELON Suntan & Body Oil</p>
+                <div class="flex justify-between text-sm text-gray-500 mt-2">
+                    <span>Това мнение беше ли полезно за Вас?</span>
+                    <span>0 / 0</span>
+                </div>
+            </div>
+            <div class="w-1/4">
+                <img src="user2.jpg" alt="Калина В." class="w-full h-auto rounded-lg">
+            </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-md mb-6 flex">
+            <div class="w-3/4 pr-4">
+                <p class="font-semibold text-lg">Оксана Л.</p>
+                <p class="text-sm text-gray-500">потвърдена поръчка - 16.02.2024</p>
+                <p class="mt-2">Много хубав елексир, обичам го. Сайта кожа винаги!</p>
+                <p class="font-semibold text-sm mt-2">Мнението е за продукт: BERRY Superberry Recharge Face Elixir</p>
+                <div class="flex justify-between text-sm text-gray-500 mt-2">
+                    <span>Това мнение беше ли полезно за Вас?</span>
+                    <span>9 / 12</span>
+                </div>
+            </div>
+            <div class="w-1/4">
+                <img src="user3.jpg" alt="Оксана Л." class="w-full h-auto rounded-lg">
+            </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-md mb-6 flex">
+            <div class="w-3/4 pr-4">
+                <p class="font-semibold text-lg">Anelia V.</p>
+                <p class="text-sm text-gray-500">потвърдена поръчка - 13.02.2024</p>
+                <p class="mt-2">Сбогом, целулит! Ползвала съм много продукти за борба с целулита, но този наистина работи. Олиото е с невероятен аромат, попива добре в кожата и я оставя изгладена и хидратирана.</p>
+                <p class="font-semibold text-sm mt-2">Мнението е за продукт: SKIN Anti-cellulite Dry Oil</p>
+                <div class="flex justify-between text-sm text-gray-500 mt-2">
+                    <span>Това мнение беше ли полезно за Вас?</span>
+                    <span>17 / 8</span>
+                </div>
+            </div>
+            <div class="w-1/4">
+                <img src="user4.jpg" alt="Anelia V." class="w-full h-auto rounded-lg">
+            </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-md mb-6 flex">
+            <div class="w-3/4 pr-4">
+                <p class="font-semibold text-lg">Anelia V.</p>
+                <p class="text-sm text-gray-500">потвърдена поръчка - 13.02.2024</p>
+                <p class="mt-2">Amazing! За пореден път поръчвам този удивителен скраб. Прави кожата ми изключително мека, гладка и подхранена. Лесен за употреба, не оставя следи, а ароматът е божествен.</p>
+                <p class="font-semibold text-sm mt-2">Мнението е за продукт: Scrub CHOCO Caramel</p>
+                <div class="flex justify-between text-sm text-gray-500 mt-2">
+                    <span>Това мнение беше ли полезно за Вас?</span>
+                    <span>9 / 1</span>
+                </div>
+            </div>
+            <div class="w-1/4">
+                <img src="user5.jpg" alt="Anelia V." class="w-full h-auto rounded-lg">
+            </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-md mb-6 flex">
+            <div class="w-3/4 pr-4">
+                <p class="font-semibold text-lg">Роса Т.</p>
+                <p class="text-sm text-gray-500">потвърдена поръчка - 12.02.2024</p>
+                <p class="mt-2">Препоръчвам! Ароматът е уникален, действието- още повече!</p>
+                <p class="font-semibold text-sm mt-2">Мнението е за продукт: GROW Hair Growth Serum Spray</p>
+                <div class="flex justify-between text-sm text-gray-500 mt-2">
+                    <span>Това мнение беше ли полезно за Вас?</span>
+                    <span>3 / 0</span>
+                </div>
+            </div>
+            <div class="w-1/4">
+                <img src="user6.jpg" alt="Роса Т." class="w-full h-auto rounded-lg">
+            </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-md mb-6 flex">
+            <div class="w-3/4 pr-4">
+                <p class="font-semibold text-lg">Роса Т.</p>
+                <p class="text-sm text-gray-500">потвърдена поръчка - 12.02.2024</p>
+                <p class="mt-2">Продуктът е чудесен, вече взимам трета опаковка, резултатите са удивителни!</p>
+                <p class="font-semibold text-sm mt-2">Мнението е за продукт: HAIR Oil Mask 3in1</p>
+                <div class="flex justify-between text-sm text-gray-500 mt-2">
+                    <span>Това мнение беше ли полезно за Вас?</span>
+                    <span>12 / 1</span>
+                </div>
+            </div>
+            <div class="w-1/4">
+                <img src="user7.jpg" alt="Роса Т." class="w-full h-auto rounded-lg">
+            </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-md mb-6 flex">
+            <div class="w-3/4 pr-4">
+                <p class="font-semibold text-lg">Angelina D.</p>
+                <p class="text-sm text-gray-500">потвърдена поръчка - 11.02.2024</p>
+                <p class="mt-2">Много хубав продукт. За пръв път ползвам серум с хиалуронова киселина, който да има аромат, но съм доста приятно изненадана, ароматът много ми харесва, а серума също е много хубав, кожата се усеща плътна и подхранена.</p>
+                <p class="font-semibold text-sm mt-2">Мнението е за продукт: AQUA Filler-Effect Hyaluron Supreme</p>
+                <div class="flex justify-between text-sm text-gray-500 mt-2">
+                    <span>Това мнение беше ли полезно за Вас?</span>
+                    <span>1 / 0</span>
+                </div>
+            </div>
+            <div class="w-1/4">
+                <img src="user8.jpg" alt="Angelina D." class="w-full h-auto rounded-lg">
+            </div>
+        </div>
+    </div>
+</section>	
+</body>
+</html>
