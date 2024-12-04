@@ -1,76 +1,166 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bg">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Начална Страница</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        #navbar {
+            transition: all 0.3s ease;
+            padding: 12px 0; 
+            position: sticky;
+            top: 0;
+            z-index: 50;
+        }
+
+        #logo {
+            transition: all 0.3s ease;
+            height: 60px; 
+        }
+
+        .smaller-navbar {
+            padding: 6px 0; 
+        }
+
+        .smaller-navbar #logo {
+            height: 30px;
+        }
+
+        .smaller-navbar .icon {
+            font-size: 1rem; 
+        }
+
+        .icon-img {
+            width: 20px;
+            height: 20px;
+        }
+		
+		.scrolling-banner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            white-space: nowrap;
+            font-size: 1rem;
+            animation: scroll-left 10s linear infinite;
+        }
+
+        @keyframes scroll-left {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    </style>
 </head>
 <body class="bg-gray-50 font-sans">
 
     <div class="bg-pink-100 text-center text-sm py-2 text-gray-700">
-        БЕЗПЛАТНА ДОСТАВКА ДО 2 РАБОТНИ ДНИ
+        <div class="scrolling-banner">
+            <span>БЕЗПЛАТНА ДОСТАВКА ДО 2 РАБОТНИ ДНИ</span>
+        </div>
     </div>
 
-    <nav class="flex items-center justify-between px-6 py-4 bg-white shadow-md">
-        <div class="text-xl font-bold text-gray-800">
-            <img src="logo.png" alt="Logo" class="h-8">
-        </div>
-        <div class="hidden md:flex space-x-6 text-gray-700">
-            <a href="#" class="hover:text-gray-900">НАЧАЛО</a>
-            <a href="#" class="hover:text-gray-900">ПРОДУКТИ</a>
-            <a href="#" class="hover:text-gray-900">CLUB</a>
-            <a href="#" class="hover:text-gray-900">ЗА НАС</a>
-            <a href="#" class="hover:text-gray-900">КОНТАКТИ</a>
-        </div>
+    <nav id="navbar" class="sticky navbar bg-white shadow-md">
+        <div class="flex items-center justify-center px-6 py-4 container mx-auto space-x-12" id="nav-container">
+            <div class="flex-shrink-0" id="logo-container">
+                <img src="cocosolis-logo.svg" alt="Logo" class="h-12" id="logo">
+            </div>
 
-        <div class="flex space-x-4 items-center text-gray-700">
-            <button class="hover:text-gray-900"><i class="fas fa-bars"></i></button> 
-            <button class="hover:text-gray-900"><i class="fas fa-search"></i></button> 
-            <button class="hover:text-gray-900"><i class="fas fa-shopping-cart"></i></button> 
+            <div class="flex space-x-6 text-gray-700">
+                <a href="#" class="hover:text-gray-900">НАЧАЛО</a>
+                <a href="#" class="hover:text-gray-900">ПРОДУКТИ</a>
+                <a href="#" class="hover:text-gray-900">CLUB</a>
+                <a href="#" class="hover:text-gray-900">ЗА НАС</a>
+                <a href="#" class="hover:text-gray-900">КОНТАКТИ</a>
+            </div>
+
+            <div class="flex space-x-6 items-center text-gray-700">
+                <button id="search-btn" class="hover:text-gray-900 icon">
+                    <img src="search-icon.svg" alt="Search" class="icon-img">
+                </button>
+                <button id="cart-btn" class="hover:text-gray-900 relative icon">
+                    <img src="cart-shopping-solid.svg" alt="Cart" class="icon-img">
+                    <span id="cart-count" class="absolute top-0 right-0 bg-red-500 text-white text-xs w-4 h-4 flex items-center justify-center rounded-full">
+                        0
+                    </span>
+                </button>
+                <button id="profile-btn" class="hover:text-gray-900 flex items-center space-x-2 icon">
+                    <img src="icon-profile-not-logged-in.svg" alt="User Profile" class="icon-img">
+                    <span>Влизане в профил</span>
+                </button>
+            </div>
         </div>
     </nav>
 
-    <section class="relative bg-gray-100 py-16 flex items-center justify-center" style="background-image: url('header-image.jpg'); background-size: cover;">
-        <div class="text-center bg-white bg-opacity-75 p-8 rounded-lg shadow-lg max-w-md">
-            <p class="text-pink-500 font-bold text-lg">New!</p>
-            <h1 class="text-2xl font-semibold text-gray-800">AURA: ПЪРВИЯТ БЛЕСТЯЩ СПРЕЙ С ПЕПТИДИ</h1>
-            <button class="mt-6 bg-pink-600 text-white px-6 py-2 rounded-full hover:bg-pink-700">Купи сега</button>
-        </div>
-    </section>
-	<section class="py-12 bg-gray-50 text-center">
+    <section 
+    class="relative bg-gray-100 flex items-center justify-center" 
+    style="background-image: url('header-image.jpg'); background-size: cover; background-position: center; min-height: 100vh;">
+    <div class="text-center bg-white bg-opacity-75 p-8 rounded-lg shadow-lg max-w-md">
+        <p class="text-pink-500 font-bold text-lg">New!</p>
+        <h1 class="text-4xl font-semibold text-gray-800">AURA: ПЪРВИЯТ БЛЕСТЯЩ СПРЕЙ С ПЕПТИДИ</h1>
+        <button class="mt-6 bg-pink-600 text-white px-6 py-3 rounded-full hover:bg-pink-700">Купи сега</button>
+    </div>
+	</section>
+
+    <script>
+        window.onscroll = function() {
+            const navbar = document.getElementById('navbar');
+            const logo = document.getElementById('logo');
+            
+            if (window.scrollY > 50) { 
+                navbar.classList.add('smaller-navbar');
+            } else {
+                navbar.classList.remove('smaller-navbar');
+            }
+        };
+    </script>
+	
+	<section class="py-12 text-center" style="background-color: #FFDAB9;">
     <h2 class="text-3xl font-semibold text-gray-800">КОСА</h2>
     <p class="text-gray-600">Натурални продукти за силна, гъста и блестяща коса</p>
-    <div class="flex justify-center mt-8 space-x-8">
-
-        <div class="bg-white p-6 rounded-lg shadow-lg w-64">
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 px-6 lg:px-12">
+        <div class="bg-white p-6 rounded-lg shadow-lg">
             <img src="product1.jpg" alt="Product 1" class="w-full h-48 object-cover rounded-md">
             <h3 class="text-sm text-gray-600 mt-4">Продукт 1</h3>
             <h4 class="text-lg font-semibold mt-2">Описание на продукта</h4>
             <p class="text-sm text-gray-500 mt-1">Описание на продукта</p>
             <p class="text-pink-600 font-bold text-lg mt-4">Цена</p>
-            <button class="mt-4 bg-pink-600 text-white px-4 py-2 rounded-full text-sm hover:bg-pink-700">Купи сега</button>
+            <button class="mt-4 bg-pink-600 text-white px-4 py-2 rounded-full text-sm hover:bg-pink-700">
+                Купи сега
+            </button>
         </div>
 
-        <div class="bg-white p-6 rounded-lg shadow-lg w-64">
+        <div class="bg-white p-6 rounded-lg shadow-lg">
             <img src="product2.jpg" alt="Product 2" class="w-full h-48 object-cover rounded-md">
             <h3 class="text-sm text-gray-600 mt-4">Продукт 2</h3>
             <h4 class="text-lg font-semibold mt-2">Описание на продукта</h4>
             <p class="text-sm text-gray-500 mt-1">Описание на продукта</p>
             <p class="text-pink-600 font-bold text-lg mt-4">Цена</p>
-            <button class="mt-4 bg-pink-600 text-white px-4 py-2 rounded-full text-sm hover:bg-pink-700">Купи сега</button>
+            <button class="mt-4 bg-pink-600 text-white px-4 py-2 rounded-full text-sm hover:bg-pink-700">
+                Купи сега
+            </button>
         </div>
     </div>
 </section>
 
-<div class="bg-pink-50 h-2 my-8"></div>
 
-<section class="py-12 bg-gray-50 text-center">
+<div class="bg-yellow-50 h-3 my-0"></div>
+
+<section class="py-12 text-center" style="background-color: #FFDAB9;">
     <h2 class="text-3xl font-semibold text-gray-800">КОЖА</h2>
     <p class="text-gray-600 mt-2">Серията SKIN за перфектна кожа, без несъвършенства.</p>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
-
-        <div class="bg-white p-6 rounded-lg shadow-lg w-64 mx-auto">
+   
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 px-6 lg:px-12">
+        <div class="bg-white p-6 rounded-lg shadow-lg">
             <img src="product1.jpg" alt="Product 1" class="w-full h-48 object-cover rounded-md">
             <h3 class="text-sm text-gray-600 mt-4">SKIN</h3>
             <h4 class="text-lg font-semibold mt-2">Anti-cellulite Dry Oil</h4>
@@ -84,7 +174,7 @@
             </div>
         </div>
 
-        <div class="bg-white p-6 rounded-lg shadow-lg w-64 mx-auto">
+        <div class="bg-white p-6 rounded-lg shadow-lg">
             <img src="product2.jpg" alt="Product 2" class="w-full h-48 object-cover rounded-md">
             <h3 class="text-sm text-gray-600 mt-4">SKIN</h3>
             <h4 class="text-lg font-semibold mt-2">Collagen Booster Dry Oil</h4>
@@ -94,7 +184,7 @@
             <button class="mt-4 bg-pink-600 text-white px-4 py-2 rounded-full text-sm hover:bg-pink-700">ДОБАВИ</button>
         </div>
 
-        <div class="bg-white p-6 rounded-lg shadow-lg w-64 mx-auto">
+        <div class="bg-white p-6 rounded-lg shadow-lg">
             <img src="product3.jpg" alt="Product 3" class="w-full h-48 object-cover rounded-md">
             <h3 class="text-sm text-gray-600 mt-4">SKIN</h3>
             <h4 class="text-lg font-semibold mt-2">Stretch Mark Dry Oil</h4>
@@ -103,10 +193,8 @@
             <p class="text-pink-600 font-bold text-lg mt-4">48,00 лв.</p>
             <button class="mt-4 bg-pink-600 text-white px-4 py-2 rounded-full text-sm hover:bg-pink-700">ДОБАВИ</button>
         </div>
-    </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
-        <div class="bg-white p-6 rounded-lg shadow-lg w-64 mx-auto">
+        <div class="bg-white p-6 rounded-lg shadow-lg">
             <img src="product4.jpg" alt="Product 4" class="w-full h-48 object-cover rounded-md">
             <h3 class="text-sm text-gray-600 mt-4">SCRUB</h3>
             <h4 class="text-lg font-semibold mt-2">Luxury Coffee Scrub Box</h4>
@@ -118,12 +206,12 @@
     </div>
 </section>
 
-<section class="py-12 bg-gray-50 text-center">
+<section class="py-12 bg-yellow-50 text-center">
     <h2 class="text-3xl font-semibold text-gray-800">ЛИЦЕ</h2>
     <p class="text-gray-600 mt-2">Високоефективни натурални продукти за подмладена и сияйна кожа.</p>
-    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8 mt-8">
-
-        <div class="bg-white p-6 rounded-lg shadow-lg w-64 mx-auto">
+    
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 px-6 lg:px-12">
+        <div class="bg-white p-6 rounded-lg shadow-lg">
             <img src="product1.jpg" alt="AQUA Filler-Effect Hyaluron Supreme" class="w-full h-48 object-cover rounded-md">
             <h3 class="text-sm text-gray-600 mt-4">AQUA</h3>
             <h4 class="text-lg font-semibold mt-2">Filler-Effect Hyaluron Supreme</h4>
@@ -133,8 +221,8 @@
             <button class="mt-4 bg-pink-600 text-white px-4 py-2 rounded-full text-sm hover:bg-pink-700">ДОБАВИ</button>
         </div>
 
-        <div class="bg-white p-6 rounded-lg shadow-lg w-64 mx-auto">
-            <img src="product2.jpg" alt="Product 2" class="w-full h-48 object-cover rounded-md">
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+            <img src="product2.jpg" alt="Lifting Super Serum" class="w-full h-48 object-cover rounded-md">
             <h3 class="text-sm text-gray-600 mt-4">LIFTING</h3>
             <h4 class="text-lg font-semibold mt-2">Lifting Super Serum</h4>
             <p class="text-sm text-gray-500 mt-1">153 мнения</p>
@@ -145,22 +233,45 @@
     </div>
 </section>
 
-        <div class="flex bg-white p-6 rounded-lg shadow-lg w-full">
-            <div class="bg-gray-300 rounded-lg shadow-lg overflow-hidden w-full h-80">
-            <img src="image-placeholder.jpg" alt="Снимка на продукт" class="w-full h-full object-cover">
+	<section class="bg-white py-2">
+    <div class="overflow-hidden relative w-full">
+        <div class="scrolling-media text-center text-gray-700 font-medium text-sm">
+            <span class="inline-block px-4">медиите говорят за нас</span>
+            <span class="inline-block px-4">COSMOPOLITAN</span>
+            <span class="inline-block px-4">VOGUE</span>
+            <span class="inline-block px-4">ELLE</span>
+            <span class="inline-block px-4">marie claire</span>
+            <span class="inline-block px-4">InStyle</span>
+            <span class="inline-block px-4">GRAZIA</span>
+            <span class="inline-block px-4">Forbes</span>
+            <span class="inline-block px-4">VANITY FAIR</span>
+        </div>
+    </div>
+</section>
 
-			</div>
-        </div>
-        </div>
-	</section>
-	
+<style>
+    .scrolling-media {
+        display: inline-block;
+        white-space: nowrap;
+        animation: scrollingText 15s linear infinite;
+    }
+
+    @keyframes scrollingText {
+        0% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+</style>
+
 	<section class="py-12 bg-yellow-50 text-center">
     <h2 class="text-3xl font-semibold text-gray-800">АВТОБРОНЗАНТИ</h2>
     <p class="text-gray-600 mb-8">За перфектен тен, без да е необходимо слънце. Постигнете естествено изглеждащ, равномерен, наситен, бронзов тен.</p>
     
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-
-        <div class="bg-white p-6 rounded-lg shadow-lg w-64 mx-auto">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-6 lg:px-12">
+        <div class="bg-white p-6 rounded-lg shadow-lg w-full">
             <img src="product1.jpg" alt="Self-tanning Face Serum" class="w-full h-48 object-cover rounded-md">
             <h3 class="text-sm text-gray-600 mt-4">NEW - SOLIS</h3>
             <h4 class="text-lg font-semibold mt-2">Self-tanning Face Serum</h4>
@@ -170,7 +281,7 @@
             <button class="mt-4 bg-pink-600 text-white px-4 py-2 rounded-full text-sm hover:bg-pink-700">ДОБАВИ</button>
         </div>
 
-        <div class="bg-white p-6 rounded-lg shadow-lg w-64 mx-auto">
+        <div class="bg-white p-6 rounded-lg shadow-lg w-full">
             <img src="product2.jpg" alt="Medium Self-tanning Foam" class="w-full h-48 object-cover rounded-md">
             <h3 class="text-sm text-gray-600 mt-4">SOLIS</h3>
             <h4 class="text-lg font-semibold mt-2">Medium Self-tanning Foam</h4>
@@ -180,7 +291,7 @@
             <button class="mt-4 bg-pink-600 text-white px-4 py-2 rounded-full text-sm hover:bg-pink-700">ДОБАВИ</button>
         </div>
 
-        <div class="bg-white p-6 rounded-lg shadow-lg w-64 mx-auto">
+        <div class="bg-white p-6 rounded-lg shadow-lg w-full">
             <img src="product3.jpg" alt="Dark Self-tanning Foam" class="w-full h-48 object-cover rounded-md">
             <h3 class="text-sm text-gray-600 mt-4">SOLIS</h3>
             <h4 class="text-lg font-semibold mt-2">Dark Self-tanning Foam</h4>
@@ -190,7 +301,7 @@
             <button class="mt-4 bg-pink-600 text-white px-4 py-2 rounded-full text-sm hover:bg-pink-700">ДОБАВИ</button>
         </div>
 
-        <div class="bg-white p-6 rounded-lg shadow-lg w-64 mx-auto">
+        <div class="bg-white p-6 rounded-lg shadow-lg w-full">
             <img src="product4.jpg" alt="Instant Weekend Tan" class="w-full h-48 object-cover rounded-md">
             <h3 class="text-sm text-gray-600 mt-4">SOLIS</h3>
             <h4 class="text-lg font-semibold mt-2">Instant Weekend Tan</h4>
@@ -200,7 +311,7 @@
             <button class="mt-4 bg-pink-600 text-white px-4 py-2 rounded-full text-sm hover:bg-pink-700">ДОБАВИ</button>
         </div>
 
-        <div class="bg-white p-6 rounded-lg shadow-lg w-64 mx-auto">
+        <div class="bg-white p-6 rounded-lg shadow-lg w-full">
             <img src="product5.jpg" alt="SELF-TANNING MITT" class="w-full h-48 object-cover rounded-md">
             <h3 class="text-sm text-gray-600 mt-4">SELF-TANNING MITT</h3>
             <h4 class="text-lg font-semibold mt-2">For ultimate results</h4>
@@ -210,7 +321,7 @@
             <button class="mt-4 bg-pink-600 text-white px-4 py-2 rounded-full text-sm hover:bg-pink-700">ДОБАВИ</button>
         </div>
 
-        <div class="bg-white p-6 rounded-lg shadow-lg w-64 mx-auto">
+        <div class="bg-white p-6 rounded-lg shadow-lg w-full">
             <img src="product6.jpg" alt="BACK APPLICATOR" class="w-full h-48 object-cover rounded-md">
             <h3 class="text-sm text-gray-600 mt-4">BACK APPLICATOR</h3>
             <h4 class="text-lg font-semibold mt-2">For self-tanning foam</h4>
@@ -220,7 +331,7 @@
             <button class="mt-4 bg-pink-600 text-white px-4 py-2 rounded-full text-sm hover:bg-pink-700">ДОБАВИ</button>
         </div>
 
-        <div class="bg-white p-6 rounded-lg shadow-lg w-64 mx-auto">
+        <div class="bg-white p-6 rounded-lg shadow-lg w-full">
             <img src="product7.jpg" alt="EXFOLIATING MITT" class="w-full h-48 object-cover rounded-md">
             <h3 class="text-sm text-gray-600 mt-4">EXFOLIATING MITT</h3>
             <h4 class="text-lg font-semibold mt-2">100% high quality silk</h4>
@@ -230,7 +341,7 @@
             <button class="mt-4 bg-pink-600 text-white px-4 py-2 rounded-full text-sm hover:bg-pink-700">ДОБАВИ</button>
         </div>
 
-        <div class="bg-white p-6 rounded-lg shadow-lg w-64 mx-auto">
+        <div class="bg-white p-6 rounded-lg shadow-lg w-full">
             <img src="product8.jpg" alt="TANNING BRUSH" class="w-full h-48 object-cover rounded-md">
             <h3 class="text-sm text-gray-600 mt-4">TANNING BRUSH</h3>
             <h4 class="text-lg font-semibold mt-2">Premium tool for face</h4>
@@ -239,17 +350,17 @@
             <p class="text-pink-600 font-bold text-lg mt-4">48,00 лв.</p>
             <button class="mt-4 bg-pink-600 text-white px-4 py-2 rounded-full text-sm hover:bg-pink-700">ДОБАВИ</button>
         </div>
-
     </div>
 </section>
-	
-	<section class="py-12 bg-yellow-100 text-center">
+
+
+<section class="py-12 bg-yellow-100 text-center">
     <h2 class="text-3xl font-semibold text-gray-800">ТЕН</h2>
     <p class="text-gray-600 mb-8">Натурални, био масла за супер тен и сияйна кожа.</p>
-    
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 
-        <div class="bg-white p-6 rounded-lg shadow-lg w-64 mx-auto">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-6 lg:px-12">
+
+        <div class="bg-white p-6 rounded-lg shadow-lg w-full">
             <img src="product1.jpg" alt="Watermelon Suntan & Body Oil" class="w-full h-48 object-cover rounded-md">
             <h3 class="text-sm text-gray-600 mt-4">WATERMELON</h3>
             <h4 class="text-lg font-semibold mt-2">Suntan & Body Oil</h4>
@@ -259,7 +370,7 @@
             <button class="mt-4 bg-pink-600 text-white px-4 py-2 rounded-full text-sm hover:bg-pink-700">ДОБАВИ</button>
         </div>
 
-        <div class="bg-white p-6 rounded-lg shadow-lg w-64 mx-auto">
+        <div class="bg-white p-6 rounded-lg shadow-lg w-full">
             <img src="product2.jpg" alt="Choco Suntan & Body Oil" class="w-full h-48 object-cover rounded-md">
             <h3 class="text-sm text-gray-600 mt-4">CHOCO</h3>
             <h4 class="text-lg font-semibold mt-2">Suntan & Body Oil</h4>
@@ -271,7 +382,7 @@
             </div>
         </div>
 
-        <div class="bg-white p-6 rounded-lg shadow-lg w-64 mx-auto">
+        <div class="bg-white p-6 rounded-lg shadow-lg w-full">
             <img src="product3.jpg" alt="Cool After Sun Oil" class="w-full h-48 object-cover rounded-md">
             <h3 class="text-sm text-gray-600 mt-4">COOL</h3>
             <h4 class="text-lg font-semibold mt-2">After Sun Oil</h4>
@@ -283,7 +394,7 @@
             </div>
         </div>
 
-        <div class="bg-white p-6 rounded-lg shadow-lg w-64 mx-auto">
+        <div class="bg-white p-6 rounded-lg shadow-lg w-full">
             <img src="product4.jpg" alt="UOMO Suntan & Body Oil" class="w-full h-48 object-cover rounded-md">
             <h3 class="text-sm text-gray-600 mt-4">UOMO</h3>
             <h4 class="text-lg font-semibold mt-2">Suntan & Body Oil</h4>
@@ -295,7 +406,7 @@
             </div>
         </div>
 
-        <div class="bg-white p-6 rounded-lg shadow-lg w-64 mx-auto">
+        <div class="bg-white p-6 rounded-lg shadow-lg w-full">
             <img src="product5.jpg" alt="Monoi Suntan & Body Oil" class="w-full h-48 object-cover rounded-md">
             <h3 class="text-sm text-gray-600 mt-4">MONOI</h3>
             <h4 class="text-lg font-semibold mt-2">Suntan & Body Oil</h4>
@@ -307,7 +418,7 @@
             </div>
         </div>
 
-        <div class="bg-white p-6 rounded-lg shadow-lg w-64 mx-auto">
+        <div class="bg-white p-6 rounded-lg shadow-lg w-full">
             <img src="product6.jpg" alt="Aloha Suntan & Body Oil" class="w-full h-48 object-cover rounded-md">
             <h3 class="text-sm text-gray-600 mt-4">ALOHA</h3>
             <h4 class="text-lg font-semibold mt-2">Suntan & Body Oil</h4>
@@ -319,7 +430,7 @@
             </div>
         </div>
 
-        <div class="bg-white p-6 rounded-lg shadow-lg w-64 mx-auto">
+        <div class="bg-white p-6 rounded-lg shadow-lg w-full">
             <img src="product7.jpg" alt="Mango Suntan & Body Oil" class="w-full h-48 object-cover rounded-md">
             <h3 class="text-sm text-gray-600 mt-4">MANGO</h3>
             <h4 class="text-lg font-semibold mt-2">Suntan & Body Oil</h4>
@@ -331,37 +442,15 @@
             </div>
         </div>
 
-        <div class="bg-white p-6 rounded-lg shadow-lg w-64 mx-auto">
-            <img src="product8.jpg" alt="Ananas Suntan & Body Oil" class="w-full h-48 object-cover rounded-md">
-            <h3 class="text-sm text-gray-600 mt-4">ANANAS</h3>
-            <h4 class="text-lg font-semibold mt-2">Suntan & Body Oil</h4>
-            <p class="text-sm text-gray-500 mt-1">305 мнения</p>
-            <p class="text-gray-600 mt-2 text-sm">Био масло с аромат на сочен ананас и ванилия.</p>
-            <div class="flex justify-center mt-4 space-x-2">
-                <button class="bg-pink-600 text-white px-4 py-2 rounded-full text-sm hover:bg-pink-700">45,00 лв. / 110ml</button>
-                <button class="bg-pink-600 text-white px-4 py-2 rounded-full text-sm hover:bg-pink-700">63,00 лв. / 200ml</button>
-            </div>
-        </div>
-
-        <div class="bg-white p-6 rounded-lg shadow-lg w-64 mx-auto">
-            <img src="product9.jpg" alt="Citro Suntan & Body Oil" class="w-full h-48 object-cover rounded-md">
-            <h3 class="text-sm text-gray-600 mt-4">CITRO</h3>
-            <h4 class="text-lg font-semibold mt-2">Suntan & Body Oil</h4>
-            <p class="text-gray-600 mt-2 text-sm">Био масло за тен с освежаващ цитрусов аромат.</p>
-            <p class="text-pink-600 font-bold text-lg mt-4">45,00 лв.</p>
-            <button class="mt-4 bg-pink-600 text-white px-4 py-2 rounded-full text-sm hover:bg-pink-700">ДОБАВИ</button>
-        </div>
-
     </div>
 </section>
-
-	<section class="py-12 bg-purple-100 text-center">
+	<section class="py-12 text-center" style="background-color: #FFDAB9;">
     <h2 class="text-3xl font-semibold text-gray-800">БЛЯСЪК</h2>
     <p class="text-gray-600 mb-8">Натурални продукти за елегантен блясък и грижа за кожата.</p>
-    
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+	
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-6 lg:px-12">
 
-        <div class="bg-white p-6 rounded-lg shadow-lg w-64 mx-auto">
+        <div class="bg-white p-6 rounded-lg shadow-lg w-full">
             <img src="product1.jpg" alt="Aura Peptide Shimmer Spray" class="w-full h-48 object-cover rounded-md">
             <h3 class="text-sm text-gray-600 mt-4">AURA</h3>
             <h4 class="text-lg font-semibold mt-2">Peptide Shimmer Spray</h4>
@@ -371,7 +460,7 @@
             <button class="mt-4 bg-pink-600 text-white px-4 py-2 rounded-full text-sm hover:bg-pink-700">ДОБАВИ</button>
         </div>
 
-        <div class="bg-white p-6 rounded-lg shadow-lg w-64 mx-auto">
+        <div class="bg-white p-6 rounded-lg shadow-lg w-full">
             <img src="product2.jpg" alt="Glow Shimmer Oil" class="w-full h-48 object-cover rounded-md">
             <h3 class="text-sm text-gray-600 mt-4">GLOW</h3>
             <h4 class="text-lg font-semibold mt-2">Shimmer Oil</h4>
@@ -381,7 +470,7 @@
             <button class="mt-4 bg-pink-600 text-white px-4 py-2 rounded-full text-sm hover:bg-pink-700">ДОБАВИ</button>
         </div>
 
-        <div class="bg-white p-6 rounded-lg shadow-lg w-64 mx-auto">
+        <div class="bg-white p-6 rounded-lg shadow-lg w-full">
             <img src="product3.jpg" alt="Nougat Sparkling Body Butter" class="w-full h-48 object-cover rounded-md">
             <h3 class="text-sm text-gray-600 mt-4">NOUGAT</h3>
             <h4 class="text-lg font-semibold mt-2">Sparkling Body Butter</h4>
@@ -398,11 +487,11 @@
     <h2 class="text-3xl font-semibold text-gray-800">SPF</h2>
     <p class="text-gray-600 mb-8">Натурални, био слънцезащитни лосиони.</p>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 px-6 lg:px-12">
 
-        <div class="bg-white p-6 rounded-lg shadow-lg w-64 mx-auto">
+        <div class="bg-white p-6 rounded-lg shadow-lg w-full">
             <img src="product1.jpg" alt="Invisible Zinc SPF30" class="w-full h-48 object-cover rounded-md">
-            <h3 class="text-sm text-gray-600 mt-4">invisible zinc</h3>
+            <h3 class="text-sm text-gray-600 mt-4">Invisible Zinc</h3>
             <h4 class="text-lg font-semibold mt-2">SPF30 Natural Sunscreen Lotion</h4>
             <p class="text-sm text-gray-500 mt-1">368 мнения</p>
             <p class="text-gray-600 mt-2 text-sm">Натурален слънцезащитен лосион. Предпазва от UVA & UVB лъчи.</p>
@@ -410,9 +499,9 @@
             <button class="mt-4 bg-pink-600 text-white px-4 py-2 rounded-full text-sm hover:bg-pink-700">ДОБАВИ</button>
         </div>
 
-        <div class="bg-white p-6 rounded-lg shadow-lg w-64 mx-auto">
+        <div class="bg-white p-6 rounded-lg shadow-lg w-full">
             <img src="product2.jpg" alt="Invisible Zinc SPF50" class="w-full h-48 object-cover rounded-md">
-            <h3 class="text-sm text-gray-600 mt-4">invisible zinc</h3>
+            <h3 class="text-sm text-gray-600 mt-4">Invisible Zinc</h3>
             <h4 class="text-lg font-semibold mt-2">SPF50 Natural Sunscreen Lotion</h4>
             <p class="text-sm text-gray-500 mt-1">355 мнения</p>
             <p class="text-gray-600 mt-2 text-sm">Натурален слънцезащитен лосион. Предпазва от UVA & UVB лъчи. Със скъпоценно малиново масло.</p>
@@ -423,20 +512,38 @@
     </div>
 </section>
 
-<section class="py-12">
-    <div class="container mx-auto">
-        <div class="flex items-center justify-between">
-            <div class="bg-orange-500 text-black p-8 w-1/2">
-                <h2 class="text-3xl font-semibold mb-4">Натурални и Био Продукти на COCOSOLIS</h2>
-                <p class="text-lg mb-4">Продуктите на COCOSОLIS са винаги натурални и създадени само с най-висококачествени био, студено пресовани масла.</p>
-                <p class="text-lg mb-4">Създадени с любов и уважение към хората и природата. Нежни към кожата. Притежаващи аромат, в който ще се влюбите.</p>
-                <p class="text-lg">Без наличие на парабени, оцветители, минерални и синтетични масла и разбира се, без тестване върху животни.</p>
-            </div>
 
-            <div class="w-1/2">
-                <img src="your-image.jpg" alt="COCOSOLIS Products" class="w-full h-full object-cover rounded-lg">
+<section class="py-12 bg-white">
+    <div class="container mx-auto flex flex-wrap lg:flex-nowrap items-center">
+        <div class="lg:w-1/2 w-full px-6 lg:pr-12">
+            <div class="bg-orange-500 text-black p-8 rounded-lg shadow-lg space-y-6">
+                <div class="flex items-start space-x-4">
+                    <img src="small-image1.jpg" alt="Икона 1" class="w-12 h-12 object-cover rounded-full shadow-lg">
+                    <p class="text-lg">
+                        Продуктите на COCOSOLIS са винаги натурални и създадени само с най-висококачествени био, студено пресовани масла.
+                    </p>
+                </div>
+                <div class="flex items-start space-x-4">
+                    <img src="small-image2.jpg" alt="Икона 2" class="w-12 h-12 object-cover rounded-full shadow-lg">
+                    <p class="text-lg">
+                        Създадени с любов и уважение към хората и природата. Нежни към кожата. Притежаващи аромат, в който ще се влюбите.
+                    </p>
+                </div>
+                <div class="flex items-start space-x-4">
+                    <img src="small-image3.jpg" alt="Икона 3" class="w-12 h-12 object-cover rounded-full shadow-lg">
+                    <p class="text-lg">
+                        Без наличие на парабени, оцветители, минерални и синтетични масла и разбира се, без тестване върху животни.
+                    </p>
+                </div>
             </div>
         </div>
+        
+        <div class="lg:w-1/2 w-full px-6 lg:pl-12">
+		<img src="large-image.jpg" alt="Голямо изображение на продукт" class="w-full h-auto object-cover rounded-lg shadow-lg">
+</div>
+</div>
+
+</div>
     </div>
 </section>
 
